@@ -1,26 +1,27 @@
 // Navigation code here
 
 .navigation {
-    display: flex;
-    justify-content: center;
+    .mixin-flex;
     flex-direction: column;
     align-items: center;
+    background: @nav-bg;
+    border: 1px solid @nav-border;
     width: 100%;
-}
 
-.logo h1 {
-    color: @header-font-color;
-    font-size: 4rem;
-}
+    h1 {
+        font-size: 4rem;
 
-.navigation nav {
-    display: flex;
-    justify-content: center;
-}
+    }
 
-.navigation nav a {
-    text-decoration: none;
-    color: @header-font-color;
-    font-size: 1.6rem;
-    margin: 1.6rem 1.6rem;
+    nav {
+        .mixin-flex;
+
+        a {
+            text-decoration: none;
+            margin: 15px 1.6rem;
+            color: @nav-font;
+            font-size: 1.6rem;
+
+        }
+    }
 }
